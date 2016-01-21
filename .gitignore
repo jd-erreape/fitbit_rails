@@ -15,3 +15,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Vim swap files
+*.swp
+
+.env
