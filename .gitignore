@@ -17,6 +17,7 @@
 .byebug_history
 
 # Vim swap files
+*.swo
 *.swp
 
 .env
