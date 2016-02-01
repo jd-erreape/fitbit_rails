@@ -11,6 +11,7 @@ bundle:
 web:
   build: .
   command: ./start.sh
+  user: ruby
   volumes:
     - .:/myapp
   volumes_from:

@@ -1,7 +1,9 @@
-FROM ruby:2.3.0
+FROM rbenv
 
-RUN apt-get update -qq && apt-get install -y build-essential libmysqlclient-dev 
-RUN mkdir /myapp
+RUN sudo apt-get update -qq && sudo apt-get install -y build-essential libmysqlclient-dev 
+RUN sudo mkdir -p /myapp
+
+RUN sudo chown -R ruby /myapp
 
 WORKDIR /myapp
 
@@ -11,5 +13,4 @@ WORKDIR /myapp
 ENV BUNDLE_PATH /bundle
 
 #RUN bundle install # Was needed for the initial creation
-
-ADD . /myapp
+#ADD . /myapp
