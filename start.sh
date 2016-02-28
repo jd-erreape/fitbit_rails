@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo chown -R ruby /bundle
 
 bundle check || bundle install
 
